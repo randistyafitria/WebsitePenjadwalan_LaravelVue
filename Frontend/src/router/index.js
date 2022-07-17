@@ -34,7 +34,27 @@ const routes = [
         path: '/edit/:id',
         name: 'dosen.edit',
         component: () => import( /* webpackChunkName: "dosen.edit" */ '@/views/dosen/Edit.vue')
-    }
+    },
+    {
+        path: '/index',
+        name: 'post.index',
+        component: () => import( /* webpackChunkName: "post.index" */ '@/views/post/Index.vue') //jam
+    },
+    {
+        path: '/create',
+        name: 'post.create',
+        component: () => import( /* webpackChunkName: "post.create" */ '@/views/post/Create.vue') //jam
+    },
+    {
+        path: '/edit/:id',
+        name: 'post.edit',
+        component: () => import( /* webpackChunkName: "post.edit" */ '@/views/post/Edit.vue') //jam
+    },
+    {
+        path: '/',
+        name: 'post.dashboard',
+        component: () => import( /* webpackChunkName: "post.dashboard" */ '@/views/post/Dashboard.vue') //jam
+    },
 ]
 
 //create router
