@@ -51,6 +51,21 @@ const routes = [
         component: () => import( /* webpackChunkName: "post.edit" */ '@/views/post/Edit.vue') //jam
     },
     {
+        path: '/pengampu',
+        name: 'pengampu.index',
+        component: () => import( /* webpackChunkName: "pengampu.index" */ '@/views/pengampu/Index.vue')
+    },
+    {
+        path: '/pengampu/create',
+        name: 'pengampu.create',
+        component: () => import( /* webpackChunkName: "pengampu.create" */ '@/views/pengampu/Create.vue')
+    },
+    {
+        path: '/pengampu/edit/:id',
+        name: 'pengampu.edit',
+        component: () => import( /* webpackChunkName: "pengampu.edit" */ '@/views/pengampu/Edit.vue')
+    },
+    {
         path: '/',
         name: 'post.dashboard',
         component: () => import( /* webpackChunkName: "post.dashboard" */ '@/views/post/Dashboard.vue') //jam
